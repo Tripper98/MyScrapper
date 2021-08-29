@@ -17,7 +17,7 @@ def intro():
         # ⏬ Data Scrapper ⏬
         </div>
 
-        
+        [![GitHub](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://www.linkedin.com/in/adnane-driouche-275763177/)
 
         ---
         """
@@ -30,7 +30,7 @@ def print_center(text):
         # {text}
         </div>
 
-        [![GitHub](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://www.linkedin.com/in/adnane-driouche-275763177/)
+        
 
         ---
         """
