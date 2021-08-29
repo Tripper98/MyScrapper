@@ -1,5 +1,7 @@
+import sys
 import streamlit as st 
 from scrap import *
+import base64
 import json
 
 download_button =  False 
@@ -28,7 +30,7 @@ def print_center(text):
         # {text}
         </div>
 
-        
+        [![GitHub](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://www.linkedin.com/in/adnane-driouche-275763177/)
 
         ---
         """
@@ -65,9 +67,15 @@ if user_input :
         out = sarouty(user_input)
 
 if scrap_button:
+    
+    
     print_center("✅ Data was scrapped successfully ✅")
     # st.title('✅ Data was scrapped successfully ✅') 
     st.write(out)
-    with open(output_file, 'w') as outfile:
-            json.dump(out, outfile)
+    out = json.dump(out, sys.stdout)
+    b64 = base64.b64encode(out)
+    desc = f'<a href="data:file/json;base64,{b64}" download="myfilename.json">Download json file</a>'
+    st.write(desc, unsafe_allow_html=True)
+    # with open(output_file, 'w') as outfile:
+    #         json.dump(out, outfile)
     st.write('---')
