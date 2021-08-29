@@ -15,9 +15,12 @@ def intro():
         width="100" height="100">
 
         # ⏬ Data Scrapper ⏬
-        </div>
 
         [![GitHub](https://badgen.net/badge/icon/GitHub?icon=github&label)](https://www.linkedin.com/in/adnane-driouche-275763177/)
+        
+        </div>
+
+        
 
         ---
         """
